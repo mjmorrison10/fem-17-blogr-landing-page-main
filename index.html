@@ -20,39 +20,53 @@
     ></script>
 
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <ol>
-        <li>Product</li>
-        <!-- <div>Overview</div> -->
-        <!-- <div>Pricing</div> -->
-        <!-- <div>Marketplace</div> -->
-        <!-- <div>Features</div> -->
-        <!-- <div>Integrations</div> -->
+      <nav class="navbar">
+        <div class="menu-items">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+          <ol class="drop-down-menu">
+            <li class="product">Product <i class="fas fa-angle-down"></i></li>
+            <!-- <div>Overview</div> -->
+            <!-- <div>Pricing</div> -->
+            <!-- <div>Marketplace</div> -->
+            <!-- <div>Features</div> -->
+            <!-- <div>Integrations</div> -->
+            <li class="company">Company <i class="fas fa-angle-down"></i></li>
+            <!-- <div>About</div> -->
+            <!-- <div>Team</div> -->
+            <!-- <div>Blog</div> -->
+            <!-- <div>Careers</div> -->
+            <li class="connect">Connect <i class="fas fa-angle-down"></i></li>
+            <!-- <div>Contact</div> -->
+            <!-- <div>Newsletter</div> -->
+            <!-- <div>LinkedIn</div> -->
+          </ol>
+        </div>
+        <div class="nav-buttons">
+          <button class="button button-primary login">Login</button>
+          <button class="button sign-up">Sign Up</button>
+        </div>
+      </nav>
 
-        <li>Company</li>
-
-        <!-- <div>About</div> -->
-        <!-- <div>Team</div> -->
-        <!-- <div>Blog</div> -->
-        <!-- <div>Careers</div> -->
-
-        <li>Connect</li>
-
-        <!-- <div>Contact</div> -->
-        <!-- <div>Newsletter</div> -->
-        <!-- <div>LinkedIn</div> -->
-      </ol>
-
-      <button>Login</button>
-      <button>Sign Up</button>
-
-      <h1>A modern publishing platform</h1>
-      <p>Grow your audience and build your online brand</p>
-
-      <button>Start for Free</button>
-      <button>Learn More</button>
+      <div class="header-bottom">
+        <h1 class="header-title">A modern publishing platform</h1>
+        <p class="header-p">Grow your audience and build your online brand</p>
+        <div class="header-buttons">
+          <button class="start-button button">Start for Free</button>
+          <button class="learn-button button-primary button">Learn More</button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -127,13 +141,14 @@
         <li>Newsletter</li>
         <li>LinkedIn</li>
       </ol>
-    </footer>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://portfolio-mjm-react.netlify.app/">mjmorrison10</a>.
+      </div>
+    </footer>
   </body>
 </html>

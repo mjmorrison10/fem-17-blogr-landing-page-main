@@ -124,7 +124,7 @@
   padding: 0;
 }
 
-body { 
+body {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -334,12 +334,77 @@ header {
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////// */
 
+.infrastructure {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infra-banner {
+  position: relative;
+  display: flex;
+  height: 45vh;
+  width: 100%;
+  border-radius: 0 75px 0 75px;
+  background: url("./images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: bottom -9rem left -9rem;
+}
+
+.infra-banner::before {
+  border-radius: 0 75px 0 75px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    hsl(var(--bg-gradient-body-very-dark-gray-blue-hsl) / 1),
+    hsl(var(--bg-gradient-body-very-dark-desaturated-blue-hsl) / 1)
+  );
+  z-index: -1;
+}
+
+.infra-img {
+  width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2.5rem;
+}
+
+.infra-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--color-grayish-blue-footer-text);
+  font-family: var(--ff-Overpass);
+}
+
+.infra-info h1 {
+  margin-bottom: 2rem;
+  font-size: 2.45rem;
+  font-weight: var(--fontWeight-normal);
+  color: var(--color-white-text);
+}
+
+.infra-info p {
+  width: 60ch;
+  letter-spacing: 1.5px;
+  font-weight: var(--fontWeight-slimmer);
+}
 
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

@@ -1,14 +1,28 @@
 :root {
+  /* Primary */
+  --color-light-red-CTA-text: hsl(356, 100%, 66%);
+  --color-very-light-red-CTA-background: hsl(355, 100%, 74%);
+  --color-very-dark-blue-headings: hsl(208, 49%, 24%);
+  /* Neutral */
+  --color-white-text: hsl(0, 0%, 100%);
+  --color-grayish-blue-footer-text: hsl(240, 2%, 79%);
+  --color-very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  --color-very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
+  /* Background gradient - Intro/CTA mobile nav */
+  --bg-color-gradient-CTA-very-light-red: hsl(13, 100%, 72%);
+  --bg-color-gradient-CTA-light-red: hsl(353, 100%, 62%);
+  /* Background gradient - body: */
+  --bg-color-gradient-body-very-dark-gray-blue: hsl(237, 17%, 21%);
+  --bg-color-gradient-body-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
   /* ### Primary */
 
-  --light-red-CTA-text: hsl(356, 100%, 66%);
   --light-red-CTA-text-hue: 356;
   --light-red-CTA-text-sat: 100%;
   --light-red-CTA-text-light: 66%;
   --light-red-CTA-text-hsl: var(--light-red-CTA-text-hue)
     var(--light-red-CTA-text-sat) var(--light-red-CTA-text-light);
 
-  --very-light-red-CTA-background: hsl(355, 100%, 74%);
   --very-light-red-CTA-background-hue: 355;
   --very-light-red-CTA-background-sat: 100%;
   --very-light-red-CTA-background-light: 74%;
@@ -16,7 +30,6 @@
     var(--very-light-red-CTA-background-sat)
     var(--very-light-red-CTA-background-light);
 
-  --very-dark-blue-headings: hsl(208, 49%, 24%);
   --very-dark-blue-headings-hue: 208;
   --very-dark-blue-headings-sat: 49%;
   --very-dark-blue-headings-light: 24%;
@@ -25,21 +38,18 @@
 
   /* ### Neutral */
 
-  --white-text: hsl(0, 0%, 100%);
   --white-text-hue: 0;
   --white-text-sat: 0%;
   --white-text-light: 100%;
   --white-text-hsl: var(--white-text-hue) var(--white-text-sat)
     var(--white-text-light);
 
-  --grayish-blue-footer-text: hsl(240, 2%, 79%);
   --grayish-blue-footer-text-hue: 240;
   --grayish-blue-footer-text-sat: 2%;
   --grayish-blue-footer-text-light: 79%;
   --grayish-blue-footer-text-hsl: var(--grayish-blue-footer-text-hue)
     var(--grayish-blue-footer-text-sat) var(--grayish-blue-footer-text-light);
 
-  --very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
   --very-dark-grayish-blue-body-copy-hue: 207;
   --very-dark-grayish-blue-body-copy-sat: 13%;
   --very-dark-grayish-blue-body-copy-light: 34%;
@@ -49,7 +59,6 @@
     var(--very-dark-grayish-blue-body-copy-sat)
     var(--very-dark-grayish-blue-body-copy-light);
 
-  --very-dark-black-blue-footer-background: hsl(240, 10%, 16%);
   --very-dark-black-blue-footer-background-hue: 240;
   --very-dark-black-blue-footer-background-sat: 10%;
   --very-dark-black-blue-footer-background-light: 16%;
@@ -63,7 +72,6 @@
 
   /* Background gradient - Intro/CTA mobile nav: */
 
-  --bg-gradient-CTA-very-light-red: hsl(13, 100%, 72%);
   --bg-gradient-CTA-very-light-red-hue: 13;
   --bg-gradient-CTA-very-light-red-sat: 100%;
   --bg-gradient-CTA-very-light-red-light: 72%;
@@ -73,7 +81,6 @@
     var(--bg-gradient-CTA-very-light-red-sat)
     var(--bg-gradient-CTA-very-light-red-light);
 
-  --bg-gradient-CTA-light-red: hsl(353, 100%, 62%);
   --bg-gradient-CTA-light-red-hue: 353;
   --bg-gradient-CTA-light-red-sat: 100%;
   --bg-gradient-CTA-light-red-light: 62%;
@@ -82,8 +89,23 @@
 
   /* Background gradient - body: */
 
-  --bg-gradient-body-very-dark-gray-blue: hsl(237, 17%, 21%);
-  --bg-gradient-body-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+  --bg-gradient-body-very-dark-gray-blue-hue: 237;
+  --bg-gradient-body-very-dark-gray-blue-sat: 17%;
+  --bg-gradient-body-very-dark-gray-blue-light: 21%;
+  --bg-gradient-body-very-dark-gray-blue-hsl: var(
+      --bg-gradient-body-very-dark-gray-blue-hue
+    )
+    var(--bg-gradient-body-very-dark-gray-blue-sat)
+    var(--bg-gradient-body-very-dark-gray-blue-light);
+
+  --bg-gradient-body-very-dark-desaturated-blue-hue: 237;
+  --bg-gradient-body-very-dark-desaturated-blue-sat: 23%;
+  --bg-gradient-body-very-dark-desaturated-blue-light: 32%;
+  --bg-gradient-body-very-dark-desaturated-blue-hsl: var(
+      --bg-gradient-body-very-dark-desaturated-blue-hue
+    )
+    var(--bg-gradient-body-very-dark-desaturated-blue-sat)
+    var(--bg-gradient-body-very-dark-desaturated-blue-light);
 
   --fontWeight-slimmer: 300;
   --fontWeight-slim: 400;
@@ -102,6 +124,7 @@
   padding: 0;
 }
 
+
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -116,14 +139,16 @@ html {
 }
 
 header {
+  font-family: var(--ff-Overpass);
+
   background-size: 200%;
   background-position: -13rem 50%;
   background-repeat: no-repeat;
 
   background-image: linear-gradient(
       to right,
-      hsl(var(--bg-gradient-CTA-very-light-red-hsl) / 0.75),
-      hsl(var(--bg-gradient-CTA-light-red-hsl) / 0.75)
+      hsl(var(--bg-gradient-CTA-very-light-red-hsl) / 0.9),
+      hsl(var(--bg-gradient-CTA-light-red-hsl) / 0.9)
     ),
     url("images/bg-pattern-intro.svg");
 
@@ -137,7 +162,6 @@ header {
 
 .navbar {
   display: flex;
-  /* background-color: blue; */
   justify-content: space-between;
   padding: 2.5rem 5rem;
 }
@@ -164,6 +188,8 @@ header {
   align-items: center;
   margin-left: 3rem;
   color: hsl(var(--white-text-hsl) / 0.75);
+  font-family: var(--ff-Ubuntu);
+  font-weight: var(--fontWeight-bolder);
 }
 
 .drop-down-menu li {
@@ -188,9 +214,9 @@ header {
 }
 
 .button {
-  background: var(--white-text);
+  background-color: var(--color-white-text);
   border: none;
-  color: var(--light-red-CTA-text);
+  color: var(--color-light-red-CTA-text);
   cursor: pointer;
   font-size: 1rem;
   font-weight: var(--fontWeight-bold);
@@ -217,7 +243,7 @@ header {
 
 .header-title {
   font-size: 2.5rem;
-  color: var(--white-text);
+  color: var(--color-white-text);
   margin: 1rem 0;
 }
 
@@ -235,6 +261,74 @@ header {
 .header-buttons button + button {
   margin-left: 1rem;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+.introduction {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+  overflow: hidden;
+  font-family: var(--ff-Ubuntu);
+}
+
+.intro-title {
+  align-self: center;
+  margin-top: 10rem;
+  color: var(--color-very-dark-blue-headings);
+  font-weight: var(--fontWeight-bolder);
+  font-size: 2rem;
+}
+
+.intro-text {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.intro-text h2,
+.intro-text p {
+  width: 58ch;
+}
+
+.intro-text h2 {
+  color: var(--color-very-dark-blue-headings);
+  font-weight: var(--fontWeight-bold);
+  font-size: 1.5rem;
+}
+
+.intro-text p {
+  color: var(--color-very-dark-grayish-blue-body-copy);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.intro-img {
+  position: absolute;
+  float: right;
+  top: 5rem;
+  right: -19.44rem;
+  z-index: -1;
+}
+
+.intro-img img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
 
 .attribution {
   font-size: 11px;

@@ -124,6 +124,10 @@
   padding: 0;
 }
 
+body { 
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 html {
   overflow: scroll;
@@ -289,7 +293,7 @@ header {
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   justify-content: center;
 }
@@ -329,6 +333,8 @@ header {
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////// */
+
+
 
 .attribution {
   font-size: 11px;

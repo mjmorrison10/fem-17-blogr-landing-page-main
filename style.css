@@ -142,6 +142,7 @@ body {
 }
 
 
+
 html {
   overflow: scroll;
   overflow-x: hidden;
@@ -256,7 +257,14 @@ header::before {
   border-radius: 50px;
   transition: all 250ms ease-in-out;
   width: fit-content;
+  transition: all 250ms ease-in-out;
 }
+
+.button:hover {
+  background-color: var(--color-very-light-red-CTA-background);
+  color: var(--color-white-text);
+}
+
 
 .button-primary {
   background: transparent;
@@ -265,6 +273,11 @@ header::before {
 
 .learn-button {
   border: 2px solid hsl(var(--white-text-hsl) / 0.5);
+}
+
+.button-primary:hover {
+  background-color: var(--color-white-text);
+color: var(--color-very-light-red-CTA-background);
 }
 
 .header-bottom {
@@ -525,6 +538,11 @@ footer {
   margin-bottom: 1rem;
   cursor: pointer;
   font-weight: var(--fontWeight-Ubuntu-slim);
+  transition: all 250 ease-in-out;
+}
+
+.footer li:hover {
+  text-decoration: underline;
 }
 
 .attribution {

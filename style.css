@@ -217,6 +217,15 @@ header::before {
   display: none;
 }
 
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons button + button {
+  margin-left: 1rem;
+}
+
 .drop-down-menu {
   display: flex;
   flex-wrap: wrap;
@@ -294,15 +303,6 @@ header::before {
 .company-menu ol li:hover,
 .connect-menu ol li:hover {
   font-weight: var(--fontWeight-Ubuntu-bold);
-}
-
-.nav-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.nav-buttons button + button {
-  margin-left: 1rem;
 }
 
 .button {

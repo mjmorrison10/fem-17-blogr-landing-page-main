@@ -13,3 +13,17 @@ menuButtons.forEach((button) => {
   // button.children[0].classList.remove("menu-button");
   //   });
 });
+
+const menuBar = document.querySelector(".menu-bars");
+
+const dropDownMenu = document.querySelectorAll(".menu-model");
+// const navButtons = document.querySelector(".nav-buttons");
+
+
+menuBar.addEventListener("click", () => {
+  menuBar.children[0].classList.toggle("fa-bars");
+  menuBar.children[0].classList.toggle("fa-times");
+  dropDownMenu.forEach((menu) => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+});

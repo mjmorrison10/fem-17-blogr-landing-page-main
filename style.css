@@ -144,24 +144,35 @@ html {
 
 header {
   font-family: var(--ff-Overpass);
-
-  background-size: 200%;
-  background-position: -13rem 50%;
-  background-repeat: no-repeat;
-
-  background-image: linear-gradient(
-      to right,
-      hsl(var(--bg-gradient-CTA-very-light-red-hsl) / 0.9),
-      hsl(var(--bg-gradient-CTA-light-red-hsl) / 0.9)
-    ),
-    url("images/bg-pattern-intro.svg");
-
   height: auto;
   width: 100%;
   display: flex;
   padding: 1rem;
   flex-direction: column;
   border-radius: 0 0 0 75px;
+  position: relative;
+  background: url("./images/bg-pattern-intro.svg");
+  background-size: 190%;
+  background-position: 11.35% 49%;
+  background-repeat: no-repeat;
+}
+
+header::before {
+  border-radius: 0 0 0 75px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    hsl(var(--bg-gradient-CTA-very-light-red-hsl) / 1),
+    hsl(var(--bg-gradient-CTA-light-red-hsl) / 1)
+  );
+  z-index: -1;
 }
 
 .navbar {
@@ -368,12 +379,13 @@ header {
   z-index: -1;
 }
 
+/* sad */
 .infra-img {
   width: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
 }
 
 .infra-info {
@@ -399,6 +411,15 @@ margin-top: 2.5rem;
   font-weight: var(--fontWeight-slimmer);
 }
 
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////// */
 
 .attribution {
   font-size: 11px;

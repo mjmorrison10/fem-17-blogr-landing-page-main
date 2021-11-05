@@ -134,7 +134,13 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  /* border-left: 1rem solid black; */
+  /* border-right: 1rem solid black; */
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+  padding: 0 0.1rem;
 }
+
 
 html {
   overflow: scroll;
@@ -317,16 +323,18 @@ header::before {
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
-  width: 75%;
-  margin: 0 auto;
+  /* width: 75%; */
+  /* margin: 0 auto; */
   justify-content: center;
+  max-width: 50%;
+  padding-left: 10%;
 }
 
 .intro-text h2,
 .intro-text p,
 .about-info h2,
 .about-info p {
-  width: 58ch;
+  max-width: 50ch;
 }
 
 .intro-text h2,
@@ -424,7 +432,7 @@ header::before {
 }
 
 .infra-info p {
-  width: 60ch;
+  max-width: 60ch;
   letter-spacing: 1.5px;
   font-weight: var(--fontWeight-Overpass-slim);
 }

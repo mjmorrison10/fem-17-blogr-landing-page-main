@@ -136,12 +136,10 @@ body {
   margin: 0 auto;
   /* border-left: 1rem solid black; */
   /* border-right: 1rem solid black; */
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5); 
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
   padding: 0 0.1rem;
 }
-
-
 
 html {
   overflow: scroll;
@@ -236,6 +234,48 @@ header::before {
   margin-left: 1rem;
 }
 
+.product,
+.company,
+.connect {
+  height: 60%;
+  position: relative;
+}
+
+.product-menu,
+.company-menu,
+.connect-menu {
+  display: none;
+  align-items: center;
+  text-align: start;
+  justify-content: center;
+  list-style-type: none;
+  position: absolute;
+  background-color: var(--color-white-text);
+  color: black;
+  top: 2rem;
+  left: -1rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.show {
+  display: flex;
+}
+
+.product-menu ol li,
+.company-menu ol li,
+.connect-menu ol li {
+  margin: 0.5rem 0;
+  font-weight: var(--fontWeight-Ubuntu-slim);
+  transition: all 250 ease;
+}
+
+.product-menu ol li:hover,
+.company-menu ol li:hover,
+.connect-menu ol li:hover {
+  font-weight: var(--fontWeight-Ubuntu-bold);
+}
+
 .nav-buttons {
   display: flex;
   align-items: center;
@@ -265,7 +305,6 @@ header::before {
   color: var(--color-white-text);
 }
 
-
 .button-primary {
   background: transparent;
   color: hsl(var(--white-text-hsl) / 0.5);
@@ -277,7 +316,7 @@ header::before {
 
 .button-primary:hover {
   background-color: var(--color-white-text);
-color: var(--color-very-light-red-CTA-background);
+  color: var(--color-very-light-red-CTA-background);
 }
 
 .header-bottom {
@@ -519,12 +558,6 @@ footer {
 }
 
 .footer-image {
-  height: 60%;
-}
-
-.product,
-.company,
-.connect {
   height: 60%;
 }
 

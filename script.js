@@ -1,28 +1,15 @@
-const product = document.querySelector(".product");
-const productButton = document.querySelector(".product-button");
-const company = document.querySelector(".company");
-const connect = document.querySelector(".connect");
+const menuButtons = document.querySelectorAll(".hover-menu");
 
-product.addEventListener("click", function () {
-  product.children[1].classList.toggle("show");
-  product.children[0].classList.toggle("menu-button");
-  console.log(product.children[1]);
-  console.log("product");
+menuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // button.classList.add('hover-menu-active');
+    button.children[0].classList.toggle("menu-button");
+    button.children[1].classList.toggle("show");
+    console.log(button.children[1]);
+  });
+  //   button.addEventListener("mouseout", () => {
+  // button.classList.remove("hover-menu-active");
+  // button.children[1].classList.remove("show");
+  // button.children[0].classList.remove("menu-button");
+  //   });
 });
-
-company.addEventListener("click", function () {
-  company.children[1].classList.toggle("show");
-  company.children[0].classList.toggle("menu-button");
-
-  console.log(company.children[1]);
-  console.log("company");
-});
-
-connect.addEventListener("click", function () {
-  connect.children[1].classList.toggle("show");
-  connect.children[0].classList.toggle("menu-button");
-
-  console.log(connect.children[1]);
-  console.log("connect");
-});
-

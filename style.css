@@ -287,6 +287,10 @@ header::before {
   border-radius: 6px;
 }
 
+.hidden-menu {
+  display: none;
+}
+
 .show {
   display: flex;
 }
@@ -635,6 +639,104 @@ footer {
     display: none;
   }
 
+  /* ///////////////Mobile//////////////////////// */
+
+  .product-menu,
+  .company-menu,
+  .connect-menu {
+    z-index: 5;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .drop-down-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    margin: 0;
+    border-radius: 4px;
+    background-color: var(--color-white-text);
+    color: var(--color-very-dark-blue-headings);
+    height: auto;
+    flex-direction: column;
+
+    /* max-width: 10ch; */
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-very-dark-blue-headings);
+  }
+
+  .drop-down-menu::after {
+    content: "";
+    position: absolute;
+    /* top: -1rem; */
+    height: 1px;
+    right: 10%;
+    left: 10%;
+    bottom: 0;
+    border-radius: 4px;
+    background-color: var(--color-grayish-blue-footer-text);
+    z-index: 10;
+  }
+
+  .drop-down-menu li {
+    margin: 1rem 0;
+  }
+
+  .drop-down-menu li + li {
+    margin: 1rem 0;
+  }
+
+  .drop-down-menu i {
+    color: var(--color-light-red-CTA-text);
+  }
+
+  .hidden-menu {
+    color: var(--color-very-dark-grayish-blue-body-copy);
+    background-color: hsl(0, 0%, 90%);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    left: 5%;
+    background-color: var(--color-white-text);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .sign-up {
+    padding: 1rem 3rem !important;
+
+    background: linear-gradient(
+      to right,
+      hsl(var(--bg-gradient-CTA-very-light-red-hsl) / 1),
+      hsl(var(--bg-gradient-CTA-light-red-hsl) / 1)
+    );
+    color: var(--color-white-text);
+  }
+
+  .nav-buttons button {
+    margin: 0.25rem 0;
+  }
+  .nav-buttons button + button {
+    margin-left: 0;
+  }
+
+  /* ///////////////EndofMobile/////////////////// */
+
   .navbar {
     padding: 0;
   }
@@ -667,6 +769,10 @@ footer {
 
   .button-primary {
     color: var(--color-white-text);
+  }
+
+  .login {
+    color: var(--color-very-dark-blue-headings);
   }
 
   /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -736,7 +842,6 @@ footer {
     text-align: center;
   }
 
-  /* fds */
   .infra-img {
     width: 100%;
     margin-top: -10rem;

@@ -113,6 +113,13 @@
   --fontWeight-bold: 600;
   --fontWeight-bolder: 700;
 
+  --fontWeight-Overpass-slim: 300;
+  --fontWeight-Overpass-bold: 600;
+
+  --fontWeight-Ubuntu-slim: 400;
+  --fontWeight-Ubuntu-normal: 500;
+  --fontWeight-Ubuntu-bold: 700;
+
   font-size: 16px;
   --ff-Overpass: "Overpass", sans-serif;
   --ff-Ubuntu: "Ubuntu", sans-serif;
@@ -144,6 +151,8 @@ html {
 
 header {
   font-family: var(--ff-Overpass);
+  /* font-family: var(--ff-Ubuntu); */
+
   height: auto;
   width: 100%;
   display: flex;
@@ -204,7 +213,7 @@ header::before {
   margin-left: 3rem;
   color: hsl(var(--white-text-hsl) / 0.75);
   font-family: var(--ff-Ubuntu);
-  font-weight: var(--fontWeight-bolder);
+  font-weight: var(--fontWeight-Ubuntu-bold);
 }
 
 .drop-down-menu li {
@@ -235,7 +244,8 @@ header::before {
   color: var(--color-light-red-CTA-text);
   cursor: pointer;
   font-size: 1rem;
-  font-weight: var(--fontWeight-bold);
+  font-family: var(--ff-Ubuntu);
+  font-weight: var(--fontWeight-Ubuntu-bold);
   padding: 0.75rem 1.75rem;
   border-radius: 50px;
   transition: all 250ms ease-in-out;
@@ -261,11 +271,13 @@ header::before {
   font-size: 2.5rem;
   color: var(--color-white-text);
   margin: 1rem 0;
+  font-weight: var(--fontWeight-Overpass-bold);
 }
 
 .header-p {
   color: hsl(var(--white-text-hsl) / 0.75);
   margin: 1rem 0;
+  font-weight: var(--fontWeight-Overpass-slim);
 }
 
 .header-buttons {
@@ -290,14 +302,14 @@ header::before {
   /* align-items: center; */
   position: relative;
   overflow: hidden;
-  font-family: var(--ff-Ubuntu);
+  font-family: var(--ff-Overpass);
 }
 
 .intro-title {
   align-self: center;
   margin-top: 10rem;
   color: var(--color-very-dark-blue-headings);
-  font-weight: var(--fontWeight-bolder);
+  font-weight: var(--fontWeight-Overpass-bold);
   font-size: 2rem;
 }
 
@@ -320,13 +332,14 @@ header::before {
 .intro-text h2,
 .about-info h2 {
   color: var(--color-very-dark-blue-headings);
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-Overpass-bold);
   font-size: 1.5rem;
 }
 
 .intro-text p,
 .about-info p {
   color: var(--color-very-dark-grayish-blue-body-copy);
+  font-weight: var(--fontWeight-Overpass-slim);
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -406,14 +419,14 @@ header::before {
 .infra-info h1 {
   margin-bottom: 2rem;
   font-size: 2.45rem;
-  font-weight: var(--fontWeight-normal);
+  font-weight: var(--fontWeight-Overpass-bold);
   color: var(--color-white-text);
 }
 
 .infra-info p {
   width: 60ch;
   letter-spacing: 1.5px;
-  font-weight: var(--fontWeight-slimmer);
+  font-weight: var(--fontWeight-Overpass-slim);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////// */
@@ -428,7 +441,7 @@ header::before {
   align-items: center;
   position: relative;
   overflow: hidden;
-  font-family: var(--ff-Ubuntu);
+  font-family: var(--ff-Overpass);
 }
 
 .about-img {
@@ -446,6 +459,16 @@ header::before {
 
 .about-info {
   width: 50%;
+}
+
+.about-info h2 {
+  font-size: 2rem;
+  font-weight: var(--fontWeight-Overpass-bold);
+}
+
+.about-info p {
+  font-size: 1rem;
+  font-weight: var(--fontWeight-Overpass-slim);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////// */
@@ -486,13 +509,14 @@ footer {
 
 .footer h3 {
   margin-bottom: 2rem;
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-Ubuntu-normal);
 }
 
 .footer li {
   list-style-type: none;
   margin-bottom: 1rem;
   cursor: pointer;
+  font-weight: var(--fontWeight-Ubuntu-slim);
 }
 
 .attribution {
